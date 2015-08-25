@@ -1,0 +1,14 @@
+/**
+* Add this bunch of css codes in your child theme's style.css file
+*/
+
+.full-width .featured-listings .bx-wrapper .listing {
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 679px) {
+  .full-width .featured-listings .bx-wrapper .listing {
+    margin: 0 0 10px;
+  }
+}
