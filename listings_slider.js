@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
-	var settings = function() {
-			var settings1 = {
-				easing: 'swing',
+    var settings = function() {
+      var settings1 = {
+        easing: 'swing',
         slideSelector: '.slides',
         auto: true,
         minSlides: 1,
@@ -11,10 +11,10 @@ jQuery(document).ready(function($) {
         slideMargin: 10,
         speed: 1300,
         pager: false
-			};
-      
+      };
+
       var settings2 = {
-				easing: 'swing',
+        easing: 'swing',
         slideSelector: '.slides',
         auto: true,
         minSlides: 1,
@@ -24,10 +24,10 @@ jQuery(document).ready(function($) {
         slideMargin: 0,
         speed: 1300,
         pager: false
-			};
+      };
       
-			var settings3 = {
-				easing: 'swing',
+      var settings3 = {
+        easing: 'swing',
         slideSelector: '.slides',
         auto: true,
         minSlides: 3,
@@ -37,16 +37,17 @@ jQuery(document).ready(function($) {
         slideMargin: 20,
         speed: 1300,
         pager: false
-			};
-      
-			return ( $(window).width() < 680 ) ? ( ( $(window).width() < 420 ) ? settings2 : settings1 ) : settings3;
-		}
-    
-    var apSlider;
-    apSlider = $('.eaplw-listings').bxSlider(settings());
-    
-    function apListingSlider() {
-			apSlider.reloadSlider(settings());
-		}
-		$(window).resize(apListingSlider);
+      };
+
+      return ( $(window).width() < 680 ) ? ( ( $(window).width() < 420 ) ? settings2 : settings1 ) : settings3;
+  }
+
+  var apSlider;
+  apSlider = $('.eaplw-listings').bxSlider( settings() );
+  
+  function apListingSlider() {
+    apSlider.reloadSlider( settings() );
+  }
+  $(window).resize(apListingSlider);
+  
 });
