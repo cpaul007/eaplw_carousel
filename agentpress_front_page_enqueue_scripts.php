@@ -17,7 +17,7 @@ function agentpress_front_page_enqueue_scripts() {
     		wp_enqueue_style( 'bxslider-css', get_bloginfo( 'stylesheet_directory' ) . '/jquery.bxslider.css' );
     		wp_enqueue_script( 'bxslider-js', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.bxslider.min.js', array(), '1.0.0' );
     		wp_enqueue_script( 'easing-js', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.easing.1.3.js', array(), '1.0.0' );
-    		wp_enqueue_script( 'listings-slider', get_bloginfo( 'stylesheet_directory' ) . '/js/listings-slider.js', array(), '1.0.0' );
+    		wp_enqueue_script( 'listings-slider', get_bloginfo( 'stylesheet_directory' ) . '/js/listings_slider.js', array(), '1.0.0' );
   	}
 
 	//* Add agentpress-pro-home body class
